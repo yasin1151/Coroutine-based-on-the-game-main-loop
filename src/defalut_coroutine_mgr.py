@@ -92,9 +92,3 @@ class DefaultCoroutineMgr(object):
         # 清理对象
         if self.m_change_list.__len__() > 0:
             self.m_change_list = []
-
-
-class Default(object):
-    ''' Brief : 用于在yield时返回的对象，
-        如果返回该对象，会在下一帧继续执行
-    '''
